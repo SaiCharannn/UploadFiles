@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Django
+*.sqlite3
+staticfiles/
+mediafiles/
+
+# Secrets — NEVER commit these
+*.pem
+*.key
+secret_key.txt

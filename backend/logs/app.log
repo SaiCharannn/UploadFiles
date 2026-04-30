@@ -1,0 +1,442 @@
+2026-04-22 09:50:56,608 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 09:50:59,708 WARNING django.request Not Found: /
+2026-04-22 09:51:00,864 WARNING django.request Not Found: /favicon.ico
+2026-04-22 09:51:03,390 WARNING django.request Not Found: /
+2026-04-22 09:55:11,381 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 09:55:12,360 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 09:55:44,854 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 09:55:45,574 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 09:56:24,121 INFO users.views Super Admin created successfully.
+2026-04-22 09:58:32,957 WARNING django.request Bad Request: /api/superadmin/create/
+2026-04-22 10:01:33,777 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 10:01:34,734 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 10:01:40,229 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 10:01:41,079 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 10:01:48,604 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 10:01:49,538 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 10:03:32,646 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 10:03:46,366 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 10:03:47,085 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 10:03:50,004 WARNING django.request Not Found: /
+2026-04-22 10:10:06,199 INFO users.views Super Admin created successfully.
+2026-04-22 10:13:12,225 INFO users.views Super Admin created successfully.
+2026-04-22 10:18:44,960 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 10:18:46,543 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:01:21,936 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:02:31,296 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-22 22:02:32,185 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:03:04,742 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:03:33,755 INFO users.views Super Admin created successfully.
+2026-04-22 22:08:02,565 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:08:03,523 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:08:33,559 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:08:34,293 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:08:59,731 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:09:00,676 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:09:08,448 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:09:09,494 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:10:04,191 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:10:58,031 WARNING django.request Not Found: /api/auth/login/
+2026-04-22 22:10:59,105 WARNING django.request Not Found: /favicon.ico
+2026-04-22 22:11:24,641 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:11:25,368 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:11:48,584 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:11:49,280 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:12:04,118 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-22 22:12:05,114 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:15:12,066 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:15:13,081 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:16:09,360 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:16:10,184 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:16:32,593 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:16:33,343 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:18:39,931 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:18:40,825 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:18:43,269 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-22 22:18:44,054 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:19:28,166 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:19:36,370 WARNING django.request Method Not Allowed: /api/auth/login/
+2026-04-22 22:19:36,429 WARNING django.request Not Found: /static/rest_framework/css/bootstrap.min.css
+2026-04-22 22:19:36,437 WARNING django.request Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2026-04-22 22:19:36,438 WARNING django.request Not Found: /static/rest_framework/css/prettify.css
+2026-04-22 22:19:36,440 WARNING django.request Not Found: /static/rest_framework/css/default.css
+2026-04-22 22:19:36,455 WARNING django.request Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
+2026-04-22 22:19:36,456 WARNING django.request Not Found: /static/rest_framework/js/csrf.js
+2026-04-22 22:19:36,457 WARNING django.request Not Found: /static/rest_framework/js/ajax-form.js
+2026-04-22 22:19:36,461 WARNING django.request Not Found: /static/rest_framework/js/bootstrap.min.js
+2026-04-22 22:19:36,463 WARNING django.request Not Found: /static/rest_framework/js/prettify-min.js
+2026-04-22 22:19:36,464 WARNING django.request Not Found: /static/rest_framework/js/default.js
+2026-04-22 22:19:36,471 WARNING django.request Not Found: /static/rest_framework/js/load-ajax-form.js
+2026-04-22 22:22:10,869 WARNING django.request Not Found: /api/auth/login/
+2026-04-22 22:24:23,915 ERROR users.exceptions Unhandled exception: 'User' object has no attribute 'id'
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 106, in post
+    refresh = RefreshToken.for_user(user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 339, in for_user
+    token = super().for_user(user)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 227, in for_user
+    user_id = getattr(user, api_settings.USER_ID_FIELD)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'id'
+2026-04-22 22:24:23,918 ERROR django.request Internal Server Error: /api/auth/login/
+2026-04-22 22:26:42,861 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:26:43,727 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:26:45,155 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-22 22:26:46,023 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:27:42,617 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-22 22:27:43,349 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:27:54,832 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:28:03,237 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-22 22:29:00,999 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-22 22:29:19,499 ERROR users.exceptions Unhandled exception: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 106, in post
+    refresh = RefreshToken.for_user(user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 344, in for_user
+    OutstandingToken.objects.create(
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+2026-04-22 22:29:19,599 ERROR django.request Internal Server Error: /api/auth/login/
+2026-04-22 22:59:02,993 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-22 22:59:17,047 ERROR users.exceptions Unhandled exception: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 106, in post
+    refresh = RefreshToken.for_user(user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 344, in for_user
+    OutstandingToken.objects.create(
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+2026-04-22 22:59:17,049 ERROR django.request Internal Server Error: /api/auth/login/
+2026-04-23 21:48:06,718 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:04:45,401 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-25 09:04:46,758 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:04:56,631 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-25 09:04:57,600 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:05:05,331 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-25 09:05:06,153 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:05:33,728 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-25 09:05:34,624 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:05:43,386 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-25 09:05:44,204 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:13:36,416 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:19:33,965 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:21:13,261 INFO users.views Super Admin created.
+2026-04-25 09:21:26,708 ERROR users.exceptions Unhandled exception: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 89, in post
+    refresh = RefreshToken.for_user(user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 344, in for_user
+    OutstandingToken.objects.create(
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+2026-04-25 09:21:26,830 ERROR django.request Internal Server Error: /api/auth/login/
+2026-04-25 09:26:15,583 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-25 09:26:16,567 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:27:24,717 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:27:36,978 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-25 09:27:44,933 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-25 09:27:52,926 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-25 09:28:28,001 INFO users.views Super Admin created.
+2026-04-25 09:28:45,724 ERROR users.exceptions Unhandled exception: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 93, in post
+    refresh = RefreshToken.for_user(user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 344, in for_user
+    OutstandingToken.objects.create(
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: SuperAdmin (SuperAdmin)>": "OutstandingToken.user" must be a "User" instance.
+2026-04-25 09:28:45,727 ERROR django.request Internal Server Error: /api/auth/login/
+2026-04-25 09:34:27,787 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:34:51,381 ERROR users.exceptions Unhandled exception: relation "users" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users" WHERE "users"."role" = 'SuperAd...
+                             ^
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users" WHERE "users"."role" = 'SuperAd...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\users\views.py", line 35, in post
+    if User.objects.filter(role='SuperAdmin').exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\query.py", line 1298, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\sql\query.py", line 676, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1591, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "S:\UploadFiles\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users" WHERE "users"."role" = 'SuperAd...
+                             ^
+
+2026-04-25 09:34:51,435 ERROR django.request Internal Server Error: /api/superadmin/create/
+2026-04-25 09:35:56,405 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-25 09:35:57,612 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:37:51,238 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-25 09:37:52,402 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:38:02,808 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-25 09:38:04,091 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:38:11,153 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-25 09:38:12,215 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:42:10,514 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:46:31,356 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:49:36,229 INFO django.utils.autoreload S:\UploadFiles\backend\users\migrations\0001_initial.py changed, reloading.
+2026-04-25 09:49:37,625 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:49:39,574 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:57:39,876 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 09:59:00,852 INFO users.views Super Admin created.
+2026-04-25 10:24:05,990 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-25 10:24:06,904 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 10:24:13,485 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-25 10:24:14,396 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-25 10:35:51,060 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-26 22:08:07,853 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-26 22:08:07,859 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-26 22:19:35,143 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-26 22:19:36,468 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-26 22:20:36,840 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-26 22:20:37,489 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-26 22:27:49,934 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:48:41,676 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 09:48:42,759 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:48:53,566 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-27 09:48:54,497 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:49:03,223 INFO django.utils.autoreload S:\UploadFiles\backend\users\serializers.py changed, reloading.
+2026-04-27 09:49:04,138 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:49:12,944 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-27 09:49:13,769 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:49:21,439 INFO django.utils.autoreload S:\UploadFiles\backend\users\permissions.py changed, reloading.
+2026-04-27 09:49:22,097 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 09:49:30,033 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-27 09:49:30,041 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-27 09:49:59,976 WARNING django.request Bad Request: /api/users/bulk/
+2026-04-27 10:05:23,361 WARNING django.request Bad Request: /api/users/bulk/
+2026-04-27 10:08:13,769 WARNING django.request Bad Request: /api/users/bulk/
+2026-04-27 22:33:26,431 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-27 22:33:26,444 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-27 23:08:15,762 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-27 23:08:18,764 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:08:25,294 INFO django.utils.autoreload S:\UploadFiles\backend\users\permissions.py changed, reloading.
+2026-04-27 23:08:27,218 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:08:48,604 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-27 23:08:50,238 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:09:58,125 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:09:59,707 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:10:32,793 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:10:33,911 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:10:45,232 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:10:46,782 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:10:52,826 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:10:54,373 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:11:11,107 INFO django.utils.autoreload S:\UploadFiles\backend\users\serializers.py changed, reloading.
+2026-04-27 23:11:13,161 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:15:46,294 INFO django.utils.autoreload S:\UploadFiles\backend\users\permissions.py changed, reloading.
+2026-04-27 23:15:47,942 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:16:53,656 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:16:55,318 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:17:20,842 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:17:21,898 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:17:33,814 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:17:35,237 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:17:39,997 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:17:41,634 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:19:03,382 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:19:04,872 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:20:04,005 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:28:38,581 WARNING django.request Forbidden: /api/users/bulk/
+2026-04-27 23:33:33,042 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:33:34,153 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:34:11,121 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:34:12,681 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:34:24,895 INFO django.utils.autoreload S:\UploadFiles\backend\users\permissions.py changed, reloading.
+2026-04-27 23:34:26,460 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:34:51,381 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:35:04,300 WARNING django.request Bad Request: /api/users/bulk/
+2026-04-27 23:38:47,832 WARNING django.request Bad Request: /api/users/bulk/
+2026-04-27 23:42:54,074 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:42:56,260 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:46:16,980 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:46:18,772 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:46:25,612 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:46:42,928 WARNING django.request Method Not Allowed: /api/users/bulk/
+2026-04-27 23:49:23,351 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:49:24,782 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:49:45,841 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:49:47,401 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:52:34,316 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:52:36,100 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:52:58,280 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-27 23:52:59,973 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-27 23:53:49,010 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-27 23:57:27,552 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-27 23:59:21,182 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 09:20:20,169 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 09:22:43,601 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-28 09:22:43,606 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-28 09:33:59,575 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 09:35:37,030 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 09:35:45,457 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 09:35:56,581 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 09:36:07,194 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 10:03:55,626 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 17:18:39,603 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 17:26:27,588 INFO users.views SuperAdmin created: ADMIN001
+2026-04-28 22:06:53,946 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 22:25:03,628 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 22:26:39,665 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-28 22:30:35,781 WARNING django.request Not Found: /media/uploads\\Lab-B\\USER002\\USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:30:37,995 WARNING django.request Not Found: /favicon.ico
+2026-04-28 22:34:10,121 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-28 22:34:12,554 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:34:17,669 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-28 22:34:19,758 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:34:30,709 WARNING django.request Not Found: /media/uploads\\Lab-B\\USER002\\USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:37:18,893 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:37:21,150 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:37:56,953 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:37:59,218 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:38:12,868 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:38:14,591 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:38:20,509 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:38:21,954 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:38:30,957 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:38:33,047 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:38:34,446 WARNING django.request Not Found: /media/uploads\\Lab-B\\USER002\\USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:39:01,068 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:39:05,561 WARNING django.request Not Found: /media/uploads\\Lab-B\\USER002\\USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:39:09,502 WARNING django.request Not Found: /media/uploads/Lab-B/USER002/USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:47:15,268 WARNING django.request Not Found: /media/uploads/Lab-B/USER002/USER002_PPT_003_20260428222951.pptx
+2026-04-28 22:50:08,836 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-28 22:50:10,941 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:50:26,316 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:50:27,797 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:57:56,619 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:57:59,185 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:58:55,236 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:58:57,346 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:59:31,540 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:59:33,832 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:59:38,721 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:59:40,671 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-28 22:59:51,823 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-28 22:59:54,030 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 09:56:42,076 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-29 09:56:43,407 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 10:02:08,615 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-29 10:02:21,505 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-29 10:02:35,578 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-29 10:03:02,087 WARNING django.request Forbidden: /api/auth/login/
+2026-04-29 10:03:31,885 WARNING django.request Forbidden: /api/auth/login/
+2026-04-29 10:14:36,260 WARNING django.request Forbidden: /api/auth/login/
+2026-04-29 15:54:53,403 INFO django.utils.autoreload S:\UploadFiles\backend\users\views.py changed, reloading.
+2026-04-29 15:54:54,752 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:55:02,777 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-29 15:55:03,597 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:55:11,435 INFO django.utils.autoreload S:\UploadFiles\backend\users\urls.py changed, reloading.
+2026-04-29 15:55:12,221 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:55:23,127 INFO django.utils.autoreload S:\UploadFiles\backend\users\serializers.py changed, reloading.
+2026-04-29 15:55:23,900 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:55:36,946 INFO django.utils.autoreload S:\UploadFiles\backend\users\permissions.py changed, reloading.
+2026-04-29 15:55:37,644 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:55:49,625 INFO django.utils.autoreload S:\UploadFiles\backend\users\models.py changed, reloading.
+2026-04-29 15:55:50,342 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:56:12,721 INFO django.utils.autoreload S:\UploadFiles\backend\users\admin.py changed, reloading.
+2026-04-29 15:56:13,516 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:56:35,962 INFO django.utils.autoreload S:\UploadFiles\backend\config\settings.py changed, reloading.
+2026-04-29 15:56:36,694 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:56:46,597 INFO django.utils.autoreload S:\UploadFiles\backend\config\urls.py changed, reloading.
+2026-04-29 15:56:47,355 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 15:56:56,385 INFO django.utils.autoreload S:\UploadFiles\backend\config\wsgi.py changed, reloading.
+2026-04-29 15:56:57,116 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 16:02:22,094 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-29 16:02:41,181 INFO django.utils.autoreload Watching for file changes with StatReloader

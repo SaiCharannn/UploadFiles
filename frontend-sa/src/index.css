@@ -1,0 +1,234 @@
+/* ── Design tokens ── */
+:root {
+  --bg:       #0d0f14;
+  --surface:  #161a23;
+  --border:   #252a38;
+  --accent:   #e8c84a;
+  --accent2:  #4a9fe8;
+  --danger:   #e84a4a;
+  --success:  #4ae88a;
+  --text:     #e8eaf0;
+  --muted:    #7a8099;
+  --font-head: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --radius:   8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+}
+
+/* ── Layout ── */
+.sa-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(74,159,232,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(232,200,74,0.06) 0%, transparent 50%),
+    var(--bg);
+  padding: 2rem;
+}
+
+.sa-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* ── Header ── */
+.sa-header { text-align: center; margin-bottom: 2rem; }
+
+.sa-logo {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.sa-logo span { color: var(--accent); }
+
+.sa-header h1 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.sa-subtitle { color: var(--muted); font-size: 0.8rem; }
+
+/* ── Form ── */
+.sa-field { margin-bottom: 1.2rem; }
+
+.sa-field label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.sa-field input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+.sa-field input:focus { border-color: var(--accent2); }
+.sa-field input.sa-input-err { border-color: var(--danger); }
+
+.sa-err-msg { font-size: 0.75rem; color: var(--danger); display: block; margin-top: 0.3rem; }
+.sa-api-error {
+  background: rgba(232,74,74,0.1);
+  border: 1px solid rgba(232,74,74,0.3);
+  border-radius: var(--radius);
+  color: var(--danger);
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Buttons ── */
+.sa-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+  margin-top: 0.5rem;
+}
+.sa-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.sa-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.sa-btn-primary  { background: var(--accent);  color: #0d0f14; }
+.sa-btn-secondary { background: var(--border); color: var(--text); }
+
+/* ── Hint ── */
+.sa-hint {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(74,159,232,0.06);
+  border: 1px solid rgba(74,159,232,0.15);
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.sa-hint code { color: var(--accent); background: transparent; }
+
+/* ── Success / Exists ── */
+.sa-success-card, .sa-exists-card { text-align: center; }
+.sa-success-icon, .sa-exists-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.sa-success-icon { color: var(--success); }
+.sa-exists-icon  { color: var(--accent);  }
+
+.sa-success-card h2, .sa-exists-card h2 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.sa-success-card p, .sa-exists-card p {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ── Splash loader ── */
+.sa-splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100vh;
+  background: var(--bg);
+}
+.sa-splash-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: blink 1s infinite;
+}
+.sa-splash-dot:nth-child(2) { animation-delay: 0.2s; }
+.sa-splash-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1);   }
+}
+
+/* ═══════════════════════════════════════
+   LIGHT THEME for frontend-sa
+═══════════════════════════════════════ */
+[data-theme="light"] {
+  --bg:       #f0f4f8;
+  --surface:  #ffffff;
+  --border:   #e2e8f0;
+  --accent:   #b45309;
+  --accent2:  #1d6fb8;
+  --danger:   #dc2626;
+  --success:  #16a34a;
+  --text:     #0f172a;
+  --muted:    #475569;
+  --font-head: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --radius:   8px;
+}
+[data-theme="light"] .sa-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+[data-theme="light"] .sa-field input {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+[data-theme="light"] .sa-btn-primary { background: #b45309; color: #fff; }
+[data-theme="light"] .sa-page {
+  background: #f0f4f8;
+}
+
+/* Theme toggle in SA app */
+.sa-theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  transition: color 0.15s, border-color 0.15s;
+}
+.sa-theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
