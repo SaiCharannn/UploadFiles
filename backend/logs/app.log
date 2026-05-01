@@ -440,3 +440,13 @@ LINE 1: SELECT 1 AS "a" FROM "users" WHERE "users"."role" = 'SuperAd...
 2026-04-29 15:56:57,116 INFO django.utils.autoreload Watching for file changes with StatReloader
 2026-04-29 16:02:22,094 INFO django.utils.autoreload Watching for file changes with StatReloader
 2026-04-29 16:02:41,181 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-04-30 08:45:35,679 WARNING django.request Unauthorized: /api/auth/me/
+2026-04-30 10:05:02,481 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-30 10:05:10,852 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-30 10:05:25,866 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-30 10:06:45,467 WARNING django.request Forbidden: /api/auth/login/
+2026-04-30 10:07:41,931 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-30 21:46:41,229 WARNING django.request Unauthorized: /api/auth/login/
+2026-04-30 21:55:16,065 INFO django.utils.autoreload Watching for file changes with StatReloader
+2026-05-01 09:25:24,904 WARNING django.request Unauthorized: /api/auth/me/
+2026-05-01 09:32:37,586 INFO django.utils.autoreload Watching for file changes with StatReloader

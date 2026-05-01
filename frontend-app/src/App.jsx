@@ -76,17 +76,21 @@ import BulkUpload from './pages/BulkuserUpload.jsx'
 import CandidateFiles from './pages/CandidateFiles.jsx'
 import PrintFiles from './pages/PrintFiles.jsx'
 
+
 function AppRoutes() {
   const { user } = useAuth()
 
   return (
     <Routes>
+       
       <Route path="/login" element={<Login />} />
 
       {/* Redirect root → dashboard if logged in, else login */}
       <Route path="/" element={
         user ? <Navigate to="/dashboard" replace /> : <Navigate to="/login" replace />
       }/>
+
+     
 
       {/* All authenticated routes share Layout */}
       <Route path="/dashboard" element={
@@ -120,6 +124,7 @@ function AppRoutes() {
       }/>
 
       <Route path="*" element={<Navigate to="/" replace />} />
+    
     </Routes>
   )
 }

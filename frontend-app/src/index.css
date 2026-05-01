@@ -85,17 +85,100 @@ code {
 }
 
 /* ═══════════════════════════════════════
-   APP SHELL
+   APP SHELL — header + body row
+   Layout:
+     app-shell  (column flex, 100vh)
+       ├── app-header   (fixed height 52px, full width)
+       └── app-body     (flex row, fills rest)
+             ├── sidebar
+             └── main-content
 ═══════════════════════════════════════ */
+
+/* ── Shell: column so header stacks above body ── */
 .app-shell {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
 }
 
+/* ── Top header bar ── */
+.app-header {
+  height: 52px;
+  min-height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  z-index: 50;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.app-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.app-header-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  line-height: 1;
+}
+.app-header-logo b { color: var(--accent); }
+
+.app-header-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border2);
+  flex-shrink: 0;
+}
+
+.app-header-titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.app-header-exam {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.app-header-powered {
+  font-size: 0.72rem;
+  color: var(--text2);
+}
+.app-header-powered strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.app-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.app-header-user {
+  font-size: 0.82rem;
+  color: var(--text2);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ── Body row: sidebar + main side by side ── */
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;   /* clips sidebar + main within the remaining height */
+}
+
 /* ── Sidebar ── */
 .sidebar {
-  width: var(--sidebar-w);
+  width: 220px;
   background: var(--surface);
   border-right: 1px solid var(--border);
   display: flex;
@@ -104,30 +187,24 @@ code {
   transition: width 0.25s ease, background 0.25s;
   overflow: hidden;
 }
-.app-shell.collapsed .sidebar { width: var(--sidebar-col); }
+.app-shell.collapsed .sidebar { width: 52px; }
 
-.sidebar-brand {
+/* Sidebar collapse bar — no logo (header has IIAP branding) */
+.sidebar-collapse-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
-  padding: 1.1rem 1rem;
+  padding: 0.65rem 0.75rem;
   border-bottom: 1px solid var(--border);
-  min-height: 56px;
+  min-height: 44px;
 }
-.brand-logo {
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: var(--text);
-  white-space: nowrap;
-}
-.brand-logo b { color: var(--accent); }
-.brand-text {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text2);
-  white-space: nowrap;
-  flex: 1;
+.sidebar-collapse-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text3);
 }
 .sidebar-toggle {
   background: none;
@@ -165,7 +242,13 @@ code {
 }
 .nav-icon { font-size: 1rem; flex-shrink: 0; width: 20px; text-align: center; }
 
-.sidebar-footer { border-top: 1px solid var(--border); padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.sidebar-footer {
+  border-top: 1px solid var(--border);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .user-info { margin-bottom: 0.25rem; }
 .user-name { font-size: 0.85rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .user-role { font-size: 0.75rem; color: var(--accent); font-family: 'DM Mono', monospace; }
@@ -178,7 +261,7 @@ code {
   gap: 0.4rem;
   background: var(--accent-dim);
   border: 1px solid var(--border2);
-  border-radius: var(--r);
+  border-radius: 8px;
   color: var(--text2);
   cursor: pointer;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -196,7 +279,7 @@ code {
   gap: 0.4rem;
   background: none;
   border: 1px solid var(--border2);
-  border-radius: var(--r);
+  border-radius: 8px;
   color: var(--text2);
   cursor: pointer;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -803,4 +886,113 @@ code {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); opacity: 0.3; }
   50%       { transform: translateY(-8px); opacity: 1; }
+}
+
+/* ═══════════════════════════════════════
+   PASSWORD SHOW/HIDE
+═══════════════════════════════════════ */
+.input-pw-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-pw-wrap input {
+  width: 100%;
+  padding-right: 2.8rem;
+}
+.pw-eye-btn {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text2);
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+  user-select: none;
+}
+.pw-eye-btn:hover { color: var(--accent); }
+
+/* ═══════════════════════════════════════
+   LOGIN — NIVANSYS BRANDING
+═══════════════════════════════════════ */
+.powered-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0.2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.powered-label {
+  font-size: 0.78rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.powered-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.powered-city {
+  font-size: 0.82rem;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+}
+
+/* ═══════════════════════════════════════
+   CANDIDATE LANDING — HEADER BANNER
+═══════════════════════════════════════ */
+.cand-header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.cand-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cand-header-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  line-height: 1;
+}
+.cand-header-logo b { color: var(--accent); }
+.cand-header-titles {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--border2);
+  padding-left: 1rem;
+}
+.cand-header-exam {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+.cand-header-powered {
+  font-size: 0.78rem;
+  color: var(--text2);
+  margin-top: 0.15rem;
+}
+.cand-header-powered strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+.cand-welcome {
+  margin-bottom: 1.5rem;
 }
