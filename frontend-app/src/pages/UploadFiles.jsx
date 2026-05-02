@@ -142,4 +142,4 @@ const s = {
   statRow:   {display:'flex',gap:12,marginBottom:16},
   stat:      {flex:1,borderRadius:8,padding:'12px',textAlign:'center',display:'flex',flexDirection:'column',gap:4},
   statNum:   {fontSize:28,fontWeight:700},
-};  
+};   

@@ -418,10 +418,20 @@ class AdminCandidateFoldersView(APIView):
             candidates = (
                 User.objects
                 .filter(role='Candidate', lab=lab)
-                .values('user_id', 'name', 'lab')
                 .order_by('user_id')
             )
-            return Response(list(candidates))
+            data = []
+            for c in candidates:
+                total   = FileUpload.objects.filter(user=c).exclude(status='Deleted').count()
+                printed = FileUpload.objects.filter(user=c, status='Printed').count()
+                data.append({
+                    'user_id':       c.user_id,
+                    'name':          c.name,
+                    'lab':           c.lab,
+                    'total_files':   total,
+                    'printed_files': printed,
+                })
+            return Response(data)
         # Return distinct labs
         labs = (
             User.objects
