@@ -609,3 +609,5 @@ LINE 1: SELECT 1 AS "a" FROM "users" WHERE "users"."role" = 'SuperAd...
 2026-05-02 22:08:22,409 WARNING django.request Too Many Requests: /api/auth/login/
 2026-05-02 22:08:22,409 WARNING django.request Too Many Requests: /api/auth/login/
 2026-05-02 22:08:22,418 WARNING django.request Too Many Requests: /api/auth/login/
+2026-05-03 09:33:51,094 WARNING django.request Unauthorized: /api/auth/me/
+2026-05-03 13:33:17,274 WARNING django.request Unauthorized: /api/auth/me/

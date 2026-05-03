@@ -8,7 +8,7 @@
 #    1  SuperAdmin : LTADMIN01
 #    5  Staff      : LTSTAFF01 to LTSTAFF05
 #    50 Candidates : LTCAND001 to LTCAND050  (Lab-A)
-#    All passwords : Test@1234
+#    All passwords : Test@1234      
 # ================================================================
 
 import os
