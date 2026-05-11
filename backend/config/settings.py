@@ -66,6 +66,12 @@ AUTH_USER_MODEL = 'users.User'
 CORS_ALLOWED_ORIGINS   = config('CORS_ALLOWED_ORIGINS', cast=lambda v: [s.strip() for s in v.split(',')])
 CORS_ALLOW_CREDENTIALS = False
 
+# ── Rate limits ─────────────────────────────────────────────────
+# LOAD_TEST=True in .env raises limits so 350 logins in 35 seconds
+# do not hit the throttle wall.
+# For production leave LOAD_TEST unset (defaults to False).
+_LOAD_TEST = config('LOAD_TEST', default=False, cast=bool)
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework_simplejwt.authentication.JWTAuthentication'],
     'DEFAULT_PERMISSION_CLASSES':     ['rest_framework.permissions.IsAuthenticated'],
@@ -73,7 +79,12 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle',
     ],
-    'DEFAULT_THROTTLE_RATES': {'anon': '20/minute', 'user': '100/minute'},
+    'DEFAULT_THROTTLE_RATES': {
+        # Load test: 500/min so 350 logins over 35 sec (10/sec) are fine
+        # Production: 20/min protects against brute force
+        'anon': '500/minute' if _LOAD_TEST else '20/minute',
+        'user': '600/minute' if _LOAD_TEST else '100/minute',
+    },
     'EXCEPTION_HANDLER': 'users.exceptions.custom_exception_handler',
 }
 
@@ -97,14 +108,33 @@ USE_TZ             = True
 STATIC_URL         = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Auto-create logs folder so Django never crashes if it is missing
+LOGS_DIR = os.path.join(BASE_DIR, 'logs')
+os.makedirs(LOGS_DIR, exist_ok=True)
+
 LOGGING = {
-    'version': 1, 'disable_existing_loggers': False,
-    'formatters': {'standard': {'format': '{asctime} {levelname} {name} {message}', 'style': '{'}},
-    'handlers': {'file': {'level': 'INFO', 'class': 'logging.handlers.RotatingFileHandler',
-        'filename': 'logs/app.log', 'maxBytes': 5*1024*1024, 'backupCount': 5, 'formatter': 'standard'}},
-    'root': {'handlers': ['file'], 'level': 'INFO'},
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {'format': '{asctime} {levelname} {name} {message}', 'style': '{'}
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(LOGS_DIR, 'app.log'),
+            'maxBytes': 5 * 1024 * 1024,
+            'backupCount': 5,
+            'formatter': 'standard',
+        },
+        'console': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+    },
+    'root': {'handlers': ['file', 'console'], 'level': 'INFO'},
 }
 
-# Allowed file extensions
 ALLOWED_UPLOAD_EXTENSIONS = ['.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx']
 MAX_UPLOAD_SIZE_MB = 20

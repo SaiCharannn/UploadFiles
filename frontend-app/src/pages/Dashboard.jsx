@@ -29,8 +29,10 @@ export default function Dashboard() {
     <div className="page">
       <div className="page-header">
         <div>
-          <h1 className="page-title">Welcome, {user?.name}</h1>
-          <p className="page-sub">
+          <h1 className="page-title" style={{ color: 'var(--text)' }}>
+            Welcome, {user?.name}
+          </h1>
+          <p className="page-sub" style={{ color: 'var(--muted)' }}>
             {user?.role}{user?.lab ? ` · ${user.lab}` : ''}
           </p>
         </div>
@@ -41,23 +43,49 @@ export default function Dashboard() {
 
       <div className="dash-grid">
         {roleCards.map(c => (
-          <button key={c.path} className="dash-card" onClick={() => navigate(c.path)}>
+          <button
+            key={c.path}
+            className="dash-card"
+            onClick={() => navigate(c.path)}
+            style={{
+              backgroundColor: 'var(--surface)',
+              border: '1px solid var(--border)',
+              color: 'var(--text)',
+            }}
+          >
             <span className="dash-icon">{c.icon}</span>
-            <h3>{c.title}</h3>
-            <p>{c.sub}</p>
+            <h3 style={{ color: 'var(--text)' }}>{c.title}</h3>
+            <p style={{ color: 'var(--muted)' }}>{c.sub}</p>
           </button>
         ))}
       </div>
 
       {isCandidate && (
-        <div className="info-box">
-          <h3>📋 Exam Instructions</h3>
+        <div
+          className="info-box"
+          style={{
+            backgroundColor: 'var(--surface)',
+            border: '1px solid var(--border)',
+            color: 'var(--text)',
+          }}
+        >
+          <h3 style={{ color: 'var(--text)' }}>📋 Exam Instructions</h3>
           <ul>
-            <li>Upload <strong>one Word (.doc/.docx)</strong> file</li>
-            <li>Upload <strong>one Excel (.xls/.xlsx)</strong> file</li>
-            <li>Upload <strong>one PowerPoint (.ppt/.pptx)</strong> file</li>
-            <li>Maximum file size: <strong>20 MB</strong> per file</li>
-            <li>You can re-upload a file if needed (until it is printed)</li>
+            <li style={{ color: 'var(--text)' }}>
+              Upload <strong style={{ color: 'var(--accent2, var(--accent))' }}>one Word (.doc/.docx)</strong> file
+            </li>
+            <li style={{ color: 'var(--text)' }}>
+              Upload <strong style={{ color: 'var(--accent2, var(--accent))' }}>one Excel (.xls/.xlsx)</strong> file
+            </li>
+            <li style={{ color: 'var(--text)' }}>
+              Upload <strong style={{ color: 'var(--accent2, var(--accent))' }}>one PowerPoint (.ppt/.pptx)</strong> file
+            </li>
+            <li style={{ color: 'var(--text)' }}>
+              Maximum file size: <strong style={{ color: 'var(--accent2, var(--accent))' }}>20 MB</strong> per file
+            </li>
+            <li style={{ color: 'var(--text)' }}>
+              You can re-upload a file if needed (until it is printed)
+            </li>
           </ul>
         </div>
       )}
