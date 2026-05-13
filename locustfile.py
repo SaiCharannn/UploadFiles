@@ -164,7 +164,6 @@ def _upload(client, headers: dict, filepath: str, filename: str, file_type: str)
             resp.failure(f"Upload {file_type} → {resp.status_code}: {resp.text[:60]}")
 
 
-# ══════════════════════════════════════════════════════════════
 # USER CLASS 1: CandidateUser
 #
 # weight=7 → 70% of all virtual users are Candidates
@@ -175,7 +174,6 @@ def _upload(client, headers: dict, filepath: str, filename: str, file_type: str)
 #   - Viewing their file list (most frequent — page auto-refreshes)
 #   - Uploading Word, Excel, PPT files
 #   - Checking session validity
-# ══════════════════════════════════════════════════════════════
 class CandidateUser(HttpUser):
     weight    = 7
     wait_time = between(5, 20)
@@ -241,7 +239,6 @@ class CandidateUser(HttpUser):
         )
 
 
-# ══════════════════════════════════════════════════════════════
 # USER CLASS 2: StaffUser
 #
 # weight=2 → 20% of virtual users are Staff
@@ -250,7 +247,6 @@ class CandidateUser(HttpUser):
 # REALISTIC FLOW:
 #   Staff logs in, selects a lab, browses candidates,
 #   views files for printing. Repeat.
-# ══════════════════════════════════════════════════════════════
 class StaffUser(HttpUser):
     weight    = 2
     wait_time = between(3, 10)
@@ -358,7 +354,6 @@ class StaffUser(HttpUser):
         )
 
 
-# ══════════════════════════════════════════════════════════════
 # USER CLASS 3: AdminUser
 #
 # weight=1 → 10% of virtual users are Admin
@@ -368,7 +363,6 @@ class StaffUser(HttpUser):
 # If you spawn many AdminUser VUs they all share the same token.
 # In Locust UI, keep total users at 356 (350+5+1) with weight
 # 7:2:1 — this naturally spawns ~1 AdminUser.
-# ══════════════════════════════════════════════════════════════
 class AdminUser(HttpUser):
     weight    = 1
     wait_time = between(2, 8)
@@ -413,9 +407,7 @@ class AdminUser(HttpUser):
         self.client.get("/api/auth/me/", headers=self.headers, name="GET /api/auth/me/ (admin)")
 
 
-# ══════════════════════════════════════════════════════════════
 # Console summary when test ends
-# ══════════════════════════════════════════════════════════════
 @events.quitting.add_listener
 def on_quit(environment, **kwargs):
     stats = environment.stats

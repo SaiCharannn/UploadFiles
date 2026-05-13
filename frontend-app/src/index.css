@@ -1271,3 +1271,370 @@ code {
   border: 1px solid var(--border2);
 }
 [data-theme="light"] .pf-print-btn-done { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+
+/* ═══════════════════════════════════════
+   CANDIDATE FILES — modal + file rows
+═══════════════════════════════════════ */
+
+/* Type card header */
+.cf-type-card { padding: 0; overflow: hidden; }
+.cf-type-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+.cf-type-header-word  { background: rgba(77,157,224,0.08); border-left: 4px solid var(--accent2); }
+.cf-type-header-excel { background: rgba(22,163,74,0.08);  border-left: 4px solid var(--success); }
+.cf-type-header-ppt   { background: rgba(234,88,12,0.08);  border-left: 4px solid #ea580c; }
+.cf-type-icon  { font-size: 1.1rem; }
+.cf-type-label { font-size: 0.88rem; font-weight: 700; flex: 1; }
+.cf-type-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: 'DM Mono', monospace;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 100px;
+  padding: 0.1rem 0.5rem;
+  color: var(--text2);
+}
+
+.cf-empty {
+  padding: 1rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--text3);
+}
+
+/* File row inside type card */
+.cf-file-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s, opacity 0.2s;
+}
+.cf-file-row:last-child { border-bottom: none; }
+.cf-file-row:hover { background: var(--row-hover); }
+
+.cf-file-row-printed {
+  background: rgba(22,163,74,0.03);
+}
+.cf-file-row-deleting {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.cf-file-info { flex: 1; min-width: 0; }
+
+.cf-file-name {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.cf-lock-icon { font-size: 0.78rem; flex-shrink: 0; }
+
+.cf-file-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--text2);
+  font-family: 'DM Mono', monospace;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+}
+.cf-meta-dot { color: var(--border2); }
+
+.cf-printed-note {
+  font-size: 0.72rem;
+  color: var(--accent2);
+  margin-top: 0.2rem;
+}
+
+/* Delete button on candidate files */
+.cf-delete-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text2);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.cf-delete-btn:hover:not(:disabled) {
+  background: rgba(220,38,38,0.1);
+  color: var(--danger);
+  border-color: rgba(220,38,38,0.3);
+}
+.cf-delete-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.cf-delete-btn-locked {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+/* Spinner inside delete button */
+.cf-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--danger);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* ── CandidateFiles delete confirmation modal ── */
+.cf-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.15s ease;
+}
+.cf-modal {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: modalPop 0.2s cubic-bezier(0.34,1.56,0.64,1);
+}
+.cf-modal-icon  { font-size: 2.5rem; line-height: 1; }
+.cf-modal-title { font-size: 1.1rem; font-weight: 700; margin: 0; }
+.cf-modal-body  {
+  font-size: 0.85rem;
+  color: var(--text2);
+  line-height: 1.6;
+  margin: 0;
+}
+.cf-modal-actions {
+  display: flex;
+  gap: 0.6rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.cf-modal-btn {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 9px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.cf-modal-btn:active { transform: scale(0.97); }
+.cf-modal-cancel {
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border2);
+}
+.cf-modal-cancel:hover { background: var(--border); }
+.cf-modal-confirm {
+  background: var(--danger);
+  color: #fff;
+}
+.cf-modal-confirm:hover { opacity: 0.88; }
+
+/* ═══════════════════════════════════════
+   PRINT FILES — new action buttons,
+   spinner, modal, right-head layout
+═══════════════════════════════════════ */
+
+/* Right panel header extras */
+.pf-right-head {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pf-right-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.pf-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Print All button */
+.pf-print-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, opacity 0.15s;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.pf-print-all-btn:active:not(:disabled) { transform: scale(0.97); }
+.pf-print-all-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.pf-print-all-go {
+  background: var(--accent);
+  color: #fff;
+}
+[data-theme="dark"] .pf-print-all-go { color: #080c14; }
+.pf-print-all-go:hover:not(:disabled) { opacity: 0.85; }
+.pf-print-all-done {
+  background: var(--surface2);
+  color: var(--success);
+  border: 1px solid rgba(22,163,74,0.25);
+}
+
+/* File action row (two buttons side by side) */
+.pf-file-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.pf-action-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  white-space: nowrap;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.pf-action-btn:active:not(:disabled) { transform: scale(0.97); }
+.pf-action-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* Open & Print — primary */
+.pf-print-btn-go {
+  background: var(--accent);
+  color: #fff;
+}
+[data-theme="dark"] .pf-print-btn-go { color: #080c14; }
+.pf-print-btn-go:hover:not(:disabled) { opacity: 0.85; }
+
+/* Reopen — muted */
+.pf-print-btn-done {
+  background: var(--surface2);
+  color: var(--text2);
+  border: 1px solid var(--border2);
+}
+.pf-print-btn-done:hover:not(:disabled) { color: var(--text); border-color: var(--text2); }
+
+/* Delete — danger ghost */
+.pf-delete-btn {
+  flex: 0 0 auto;
+  background: transparent;
+  color: var(--text2);
+  border: 1px solid var(--border2);
+  padding: 0.5rem 0.7rem;
+}
+.pf-delete-btn:hover:not(:disabled) {
+  background: rgba(220,38,38,0.1);
+  color: var(--danger);
+  border-color: rgba(220,38,38,0.3);
+}
+
+/* Spinner */
+.pf-spinner {
+  display: inline-block;
+  width: 13px; height: 13px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+.pf-spinner-sm { width: 11px; height: 11px; }
+.pf-spinner-red {
+  border-color: rgba(220,38,38,0.25);
+  border-top-color: var(--danger);
+}
+
+/* File card deleting state */
+.pf-file-deleting { opacity: 0.4; pointer-events: none; }
+
+/* Meta dot */
+.pf-meta-dot { color: var(--border2); }
+
+/* Print Files delete modal */
+.pf-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+  backdrop-filter: blur(3px);
+  animation: fadeIn 0.15s ease;
+}
+.pf-modal {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%; max-width: 360px;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0.65rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: modalPop 0.2s cubic-bezier(0.34,1.56,0.64,1);
+}
+.pf-modal-icon  { font-size: 2.5rem; line-height: 1; }
+.pf-modal-title { font-size: 1.1rem; font-weight: 700; margin: 0; }
+.pf-modal-body  { font-size: 0.85rem; color: var(--text2); line-height: 1.6; margin: 0; }
+.pf-modal-actions { display: flex; gap: 0.6rem; width: 100%; margin-top: 0.5rem; }
+.pf-modal-btn {
+  flex: 1; padding: 0.6rem 1rem; border-radius: 9px;
+  font-size: 0.875rem; font-weight: 600; border: none;
+  cursor: pointer; transition: background 0.15s, transform 0.1s;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.pf-modal-btn:active { transform: scale(0.97); }
+.pf-modal-cancel  { background: var(--surface2); color: var(--text); border: 1px solid var(--border2); }
+.pf-modal-cancel:hover { background: var(--border); }
+.pf-modal-confirm { background: var(--danger); color: #fff; }
+.pf-modal-confirm:hover { opacity: 0.88; }
+
+/* Shared animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,14 +1,4 @@
-// import api from './auth';
 
-// export const getMyFiles  = ()           => api.get('/api/files/').then(r=>r.data);
-// export const deleteFile  = (id)         => api.delete(`/api/files/${id}/delete/`).then(r=>r.data);
-// export const uploadFile  = (file, fileType, onProgress) => {
-//   const fd = new FormData(); fd.append('file',file); fd.append('file_type',fileType);
-//   return api.post('/api/files/', fd, {
-//     headers:{'Content-Type':'multipart/form-data'},
-//     onUploadProgress: onProgress ? e=>onProgress(e.loaded,e.total) : undefined,
-//   }).then(r=>r.data);
-// };
 
 
 import axios from 'axios'
